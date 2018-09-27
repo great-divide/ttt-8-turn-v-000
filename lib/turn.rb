@@ -31,15 +31,6 @@ def move(board, position, character = "X")
   board[position] = character
 end
 
-# def move
-#   puts "Please enter 1-9:"
-#   move = gets.strip
-#     if valid_move?(board, move) == true
-#       board[move] = move
-#       display_board(board)
-#       move
-#     else 
-#       puts "That is not a valid response"
-#       move
-#     end
-# end
+def turn
+  puts "Please enter 1-9:"
+end
