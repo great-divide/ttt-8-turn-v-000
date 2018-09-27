@@ -1,9 +1,9 @@
 def display_board(board)
-  puts " #{board[0]} | #{board[1]} | #{board[2]}"
+  puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
-  puts " #{board[3]} | #{board[4]} | #{board[5]}"
+  puts " #{board[3]} | #{board[4]} | #{board[5]} "
   puts "-----------"
-  puts " #{board[6]} | #{board[7]} | #{board[8]}"
+  puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def valid_move?(board, index)
@@ -23,15 +23,23 @@ def position_taken?(board, index)
    end
  end 
 
-def move
-  puts "Please enter 1-9:"
-  move = gets.strip
-    if valid_move?(board, move) == true
-      board[move] = move
-      display_board(board)
-      move
-    else 
-      puts "That is not a valid response"
-      move
-    end
+def input_to_index(user_input) 
+  return user_input.to_i - 1
 end
+
+def move(board, position, character = "X")
+  board[position] = character
+end
+
+# def move
+#   puts "Please enter 1-9:"
+#   move = gets.strip
+#     if valid_move?(board, move) == true
+#       board[move] = move
+#       display_board(board)
+#       move
+#     else 
+#       puts "That is not a valid response"
+#       move
+#     end
+# end
