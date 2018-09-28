@@ -38,9 +38,10 @@ def turn(board)
 
   position = input_to_index(user_input)
   
-  valid_move?(board, index)
+  valid_move?(board, position)
 
-  move(board, position)
-
+  if valid_move?(board, position) = true
+    move(board, position)
+  end
   display_board(board)
 end
