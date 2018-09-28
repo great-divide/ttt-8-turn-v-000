@@ -34,11 +34,11 @@ end
 def turn
   puts "Please enter 1-9:"
   
-  user_input = gets.strip
+  # user_input = gets.strip
 
-  position = input_to_index(user_input)
+  # position = input_to_index(user_input)
 
-  move(board, position)
+  # move(board, position)
 
-  display_board(board)
+  # display_board(board)
 end
